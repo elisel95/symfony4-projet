@@ -17,11 +17,24 @@ class baseController extends Controller
     /**
      * @Route("/")
     */
-    public function number()
-    {
+     public function index()
+        {
+        return $this->render('accueil.html.twig');
+        }
 
-        $number = mt_rand(0,100);
+    /**
+     * @Route("mentions")
+    */
+     public function mentionLegale()
+        {
+        return $this->render('mention.html.twig');
+        }
 
-        return $this->render('base.html.twig');
-    }
+    /**
+     * @Route("contact")
+    */
+     public function contact()
+        {
+        return $this->render('contact.html.twig');
+        }
 }

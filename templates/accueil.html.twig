@@ -1,5 +1,21 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {# bandeau #}
+    <div id="bandeau">
+        <div class="bandeau_shadow">
+            <h1>MySite</h1>
+        </div>
+    </div>
 
+    {# dernière photos #}
+    <div class="container" id="dPhotos">
+        <h2> Dernières Photos</h2>
+        <div class="row">
+            <img class="col-md-4" src="../images/01.jpg" alt="01">
+            <img class="col-md-4" src="../images/02.jpg" alt="02">
+            <img class="col-md-4" src="../images/03.jpg" alt="">
+        </div>
+
+    </div>
 {% endblock %}

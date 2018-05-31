@@ -1,0 +1,190 @@
+/* GENERAL */
+ body {
+     background-color: #585857;
+ }
+
+h1,h2, h3{
+    text-align: center;
+    font-family: 'Spectral SC', serif;
+}
+
+h1 {
+    font-size: 8em;
+    padding-top: 120px;
+    color: #fffffc;
+}
+
+h2 {
+    color: #fefefe;
+    text-shadow: 2px 2px #4d4545 ;
+}
+
+h3 {
+    color: #fefefe;
+}
+
+/* MENU */
+#logo{
+    font-family: 'Holtwood One SC', serif;
+    font-size: 1rem;
+    color: #eaeaea;
+}
+
+/* footer */
+footer {
+    background-color: #343a40;
+    margin-bottom:0;
+    padding:50px 0 30px;
+}
+
+footer ul li{
+    list-style-type: none;
+    text-align:center;
+    color: #eaeaea;
+    display: inline-block;
+}
+
+footer ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+footer ul li a:focus {
+    color: #87ecff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #00d8ff;
+}
+
+/* bandeau */
+#bandeau{
+    height: 400px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/bandeau.jpg');
+    margin-top: 0;
+}
+
+.bandeau_shadow {
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* dernières photos */
+#dPhotos {
+    padding: 50px 0;
+}
+
+#dPhotos h2 {
+    padding-bottom: 30px;
+}
+
+/* mentions léales */
+.mention {
+    color: #e5e5e5;
+}
+
+.mention a {
+    color: #87ecff;
+    text-decoration: none;
+}
+
+.mention a:focus {
+     color: #87ecff;
+     text-decoration: none;
+ }
+
+.mention a:hover {
+    color: #00d8ff;
+}
+
+/* contact */
+/* bandeau */
+#bandeau2{
+    height: 200px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/03.jpg');
+    margin-top: 0;
+}
+
+.bandeau_shadow2 {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#bandeau2 h1 {
+    padding-top: 1em;
+    font-size: 3em;
+}
+
+.contact img{
+    margin: 5em 2em 0;
+    width: 17em;
+    height: 12em;
+    border-radius: 100%;
+}
+
+.p1, .p2, .p3 {
+    color: #d6d4d4;
+    font-size: 1.5em;
+    padding-bottom: 2em;
+}
+.p1{
+    padding-left: 6em;
+}
+.p2 {
+    padding-left: 5em;
+}
+
+.p3 {
+    padding-left: 4em;
+}
+#contact, #message, #moi {
+    display:none;
+    margin-bottom: 3em;
+}
+
+/* responsive */
+@media (max-width: 985px) {
+    .contact img{
+        margin:1.5em 6em 0;
+        width: 15em;
+        height: 10em;
+        border-radius: 100%;
+    }
+
+    .p1, .p2, .p3 {
+        color: #d6d4d4;
+        font-size: 1em;
+        padding-bottom: 1em;
+    }
+    .p1{
+        padding-left: 13em;
+    }
+    .p2 {
+        padding-left: 12em;
+    }
+
+    .p3 {
+        padding-left: 11em;
+    }
+}
+@media (max-width: 765px) {
+    h1 {
+        font-size: 5em;
+        padding-top: 120px;
+        color: #fffffc;
+    }
+    #dPhotos img{
+        padding: 1em;
+    }
+}

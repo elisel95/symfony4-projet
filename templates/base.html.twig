@@ -13,6 +13,7 @@
                   integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
                   crossorigin="anonymous">
             <!-- MyCSS -->
+            <link rel="stylesheet" href="css/style.css">
         {% endblock %}
     </head>
     <body>
@@ -25,11 +26,11 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="articles/">Articles <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact/">Contact</a>
+                        <a class="nav-link" href="contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://fr-fr.facebook.com/">Facebook</a>
@@ -44,6 +45,15 @@
 
         {% block body %}
         {% endblock %}
+        <footer>
+            <div class="container">
+                <ul class="row">
+                    <li class="col-md-6"><a href="mentions">Mentions Légales</a></li>
+                    <li class="col-md-5">Site Test créé avec Symfony 4
+                    </li>
+                </ul>
+            </div>
+        </footer>
         {% block javascripts %}
            <!-- JQUERY -->
             <script
@@ -62,6 +72,7 @@
                     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                     crossorigin="anonymous"></script>
             <!-- MyJS -->
+            <script  src="js/script.js"></script>
         {% endblock %}
     </body>
 </html>
