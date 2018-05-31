@@ -12,18 +12,16 @@ use Symfony\{
     Bundle\FrameworkBundle\Controller\Controller, Component\HttpFoundation\Response, Component\Routing\Annotation\Route
 };
 
-class LuckyController extends Controller
+class baseController extends Controller
 {
     /**
-     * @Route("/lucky/number")
+     * @Route("/")
     */
     public function number()
     {
 
         $number = mt_rand(0,100);
 
-        return $this->render('lucky.html.twig', array(
-            'number' => $number,
-        ));
+        return $this->render('base.html.twig');
     }
 }
