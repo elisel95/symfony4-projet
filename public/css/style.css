@@ -153,6 +153,10 @@ footer ul li a:hover {
     margin-bottom: 3em;
 }
 
+#contact {
+    margin-right: 5em;
+}
+
 /* responsive */
 @media (max-width: 985px) {
     .contact img{
