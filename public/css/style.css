@@ -191,4 +191,7 @@ footer ul li a:hover {
     #dPhotos img{
         padding: 1em;
     }
+    #contact, #message, #moi {
+        margin-left: 2em;
+    }
 }
