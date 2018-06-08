@@ -18,10 +18,14 @@ class baseController extends Controller
     /**
      * @Route("/")
     */
-     public function index()
+     public function index(Connection $db)
         {
-        return $this->render('accueil.html.twig');
+        $photo = $db->fetchAll('SELECT * from photo ORDER BY id DESC LIMIT 3');
+        return $this->render('accueil.html.twig',[
+           'photos' => $photo
+           ]);
         }
+
 
     /**
      * @Route("mentions")
@@ -30,6 +34,17 @@ class baseController extends Controller
         {
         return $this->render('mention.html.twig');
         }
+
+     /**
+     * @Route("photo")
+     */
+     public function photos(Connection $db)
+         {
+         $photo = $db->fetchAll('SELECT * from photo');
+         return $this->render('photo.html.twig',[
+             'photos' => $photo
+             ]);
+         }
 
     /**
      * @Route("contact")
@@ -52,10 +67,8 @@ class baseController extends Controller
 
            }
 
-
-
-
            return $this->render('contact.html.twig', ['contacts' => $contact
            ]);
        }
+
 }

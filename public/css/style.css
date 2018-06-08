@@ -169,6 +169,17 @@ footer ul li a:hover {
     margin: 0 3em 0;
 }
 
+/* photothèque */
+.phototheque {
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+.phototheque h4{
+    margin: 50px 20px 20px;
+}
+
+
 /* responsive */
 @media (max-width: 985px) {
     .contact img{

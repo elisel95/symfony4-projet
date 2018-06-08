@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container phototheque">
+        <h2> Photothèque</h2>
+        <div class="row">
+            {% for photo in photos %}
+                <div  class="col-md-4">
+                    <h4>{{ photo.titre }}</h4>
+                    <img class="col-md-12" src="../{{ photo.image }}" alt="{{ photo.description }}" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width='+this.width+', height='+this.height);">
+                    <p><em>{{  photo.description }}</em></p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

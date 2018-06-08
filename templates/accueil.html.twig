@@ -12,10 +12,9 @@
     <div class="container" id="dPhotos">
         <h2> Dernières Photos</h2>
         <div class="row">
-            <img class="col-md-4" src="../images/01.jpg" alt="01">
-            <img class="col-md-4" src="../images/02.jpg" alt="02">
-            <img class="col-md-4" src="../images/03.jpg" alt="">
+            {% for photo in photos %}
+            <img class="col-md-4" src="../{{ photo.image }}" alt="{{ photo.description }}" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width='+this.width+', height='+this.height);">
+            {% endfor %}
         </div>
-
     </div>
 {% endblock %}
