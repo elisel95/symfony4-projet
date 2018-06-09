@@ -1,8 +1,32 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\baseController::index
 
 #lucky number (test)
 #app_lucky_number:
 #     path: /lucky/number
 #    controller: App\Controller\LuckyController::number
+
+app_admin:
+  path: /admin
+  controller: App\Controller\AdminController::admin
+
+
+app_addphoto:
+  path: /admin/photo/ajouter
+  controller: App\Controller\AdminController::insertphoto
+
+modifcontact:
+  path: /admin/contact/modifier
+  controller: App\Controller\AdminController::contact
+
+modifphoto:
+    path:     /admin/photo/edit/{id}
+    controller: App\Controller\AdminController::modifphoto
+
+supprim_photo:
+    path:     /admin/photo/delete/{id}
+    controller: App\Controller\AdminController::supprimphoto
+
+logout:
+    path: /logout
