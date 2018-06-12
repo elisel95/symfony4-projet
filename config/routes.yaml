@@ -7,26 +7,25 @@ index:
 #     path: /lucky/number
 #    controller: App\Controller\LuckyController::number
 
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
 app_admin:
   path: /admin
   controller: App\Controller\AdminController::admin
-
-
-app_addphoto:
-  path: /admin/photo/ajouter
-  controller: App\Controller\AdminController::insertphoto
 
 modifcontact:
   path: /admin/contact/modifier
   controller: App\Controller\AdminController::contact
 
-modifphoto:
-    path:     /admin/photo/edit/{id}
-    controller: App\Controller\AdminController::modifphoto
+app_insertPhoto:
+    path: /admin/photo/ajouter
+    controller: App\Controller\AdminController::insertPhoto
 
-supprim_photo:
-    path:     /admin/photo/delete/{id}
-    controller: App\Controller\AdminController::supprimphoto
+app_deletePhoto:
+    path: /admin/photo/supprimer/{id}
+    controller: App\Controller\AdminController::deletePhoto
 
 logout:
     path: /logout

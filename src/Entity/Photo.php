@@ -99,23 +99,5 @@ class Photo
     /**
      * @return mixed
      */
-    public function getActive()
-    {
-        return $this->active;
-    }
-
-    /**
-     * @param mixed $active
-     */
-    public function setActive($active): void
-    {
-        $this->active = $active;
-    }
-
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $active;
-
 
 }

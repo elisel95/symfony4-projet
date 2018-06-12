@@ -26,4 +26,4 @@ class LuckyController extends Controller
             'number' => $number,
         ));
     }
-}
+};

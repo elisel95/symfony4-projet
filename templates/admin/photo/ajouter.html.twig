@@ -1,0 +1,32 @@
+{%  extends 'base-admin.html.twig' %}
+
+   {% block body %}
+               <!-- image deja presente dans le slider -->
+                   <h2>Image dans la gallerie:</h2>
+                        <div class="row">
+                       {% for photo in product %}
+                           <div style="display:inline-block;" class="image_block_modif">
+                               <img style="display: block;" src="../../{{ photo.image }}" alt="{{ photo.description }}">
+                               <form method="post" action="supprimer/{{ photo.id }}" class="col-md-6 col-xs-12">
+                                   <button type="submit" class="fa fa-trash btn-danger btn" name="delete"></button>
+                               </form>
+                           </div>
+
+                       {% endfor %}
+
+                      </div>
+
+                   <!-- Ajout d'une image -->
+                   <div class="form-inline">
+                       <!-- FORMULAIRE -->
+                       {{ form_start(form) }}
+                       {{ form_widget(form) }}
+                       <button type="submit" class="btn btn-warning" value="publier">Envoyer</button>
+                       {{ form_end(form) }}
+                   </div>
+
+               </div>
+           </div>
+
+
+       {% endblock %}

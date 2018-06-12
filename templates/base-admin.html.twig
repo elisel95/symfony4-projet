@@ -13,7 +13,7 @@
               integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
               crossorigin="anonymous">
         <!-- MyCSS -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     {% endblock %}
 </head>
 <body>
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="{{ path('app_addphoto') }}">Photos <span class="sr-only"></span></a>
+                <a class="nav-link" href="{{ path('app_insertPhoto') }}">Photos <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('modifcontact') }}">Contact</a>
@@ -37,6 +37,7 @@
 </nav>
 
 {% block body %}
+
 {% endblock %}
 {% block javascripts %}
     <!-- JQUERY -->

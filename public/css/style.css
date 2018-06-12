@@ -179,6 +179,23 @@ footer ul li a:hover {
     margin: 50px 20px 20px;
 }
 
+.image_block_modif{
+    border-right: solid #b5b5b5 1px;
+    padding: 20px;
+}
+
+.image_block_modif .btn{
+    padding:1px;
+    margin: 0px;
+}
+
+.image_block_modif form{
+    width: 80px;
+}
+
+.image_block_modif img{
+    width: 11em;
+}
 
 /* responsive */
 @media (max-width: 985px) {
